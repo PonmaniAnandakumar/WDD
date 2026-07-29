@@ -1,0 +1,82 @@
+<html>
+<head>
+    <title>Online Quiz</title>
+</head>
+
+<body>
+
+<center>
+    <h2>Online Quiz</h2>
+</center>
+
+<form>
+
+<p>1. HTML stands for?</p>
+<input type="radio" name="q1" id="q1"> Hyper Text Markup Language<br>
+<input type="radio" name="q1"> High Text Machine Language<br><br>
+
+<p>2. CSS is used for?</p>
+<input type="radio" name="q2" id="q2"> Styling Web Pages<br>
+<input type="radio" name="q2"> Database Management<br><br>
+
+<p>3. JavaScript is used for?</p>
+<input type="radio" name="q3" id="q3"> Making Web Pages Interactive<br>
+<input type="radio" name="q3"> Creating Hardware<br><br>
+
+<p>4. Which tag creates a paragraph?</p>
+<input type="radio" name="q4" id="q4"> &lt;p&gt;<br>
+<input type="radio" name="q4"> &lt;img&gt;<br><br>
+
+<p>5. Which tag inserts an image?</p>
+<input type="radio" name="q5" id="q5"> &lt;img&gt;<br>
+<input type="radio" name="q5"> &lt;table&gt;<br><br>
+
+<p>6. Which symbol is used for comments in JavaScript?</p>
+<input type="radio" name="q6" id="q6"> //<br>
+<input type="radio" name="q6"> ##<br><br>
+
+<p>7. Which company developed Java?</p>
+<input type="radio" name="q7" id="q7"> Sun Microsystems<br>
+<input type="radio" name="q7"> Microsoft<br><br>
+
+<p>8. Which HTML tag creates a hyperlink?</p>
+<input type="radio" name="q8" id="q8"> &lt;a&gt;<br>
+<input type="radio" name="q8"> &lt;h1&gt;<br><br>
+
+<p>9. Which language runs in a web browser?</p>
+<input type="radio" name="q9" id="q9"> JavaScript<br>
+<input type="radio" name="q9"> C++<br><br>
+
+<p>10. HTML files are saved with which extension?</p>
+<input type="radio" name="q10" id="q10"> .html<br>
+<input type="radio" name="q10"> .txt<br><br>
+
+<script>
+        function checkQuiz() {
+            var score = 0;
+
+            if(document.getElementById("q1").checked) score++;
+            if(document.getElementById("q2").checked) score++;
+            if(document.getElementById("q3").checked) score++;
+            if(document.getElementById("q4").checked) score++;
+            if(document.getElementById("q5").checked) score++;
+            if(document.getElementById("q6").checked) score++;
+            if(document.getElementById("q7").checked) score++;
+            if(document.getElementById("q8").checked) score++;
+            if(document.getElementById("q9").checked) score++;
+            if(document.getElementById("q10").checked) score++;
+
+            alert("Your Score is " + score + " / 10");
+        }
+    </script>
+
+
+<center>
+    <input type="button" value="Submit Quiz" onclick="checkQuiz()">
+    <input type="reset" value="Reset">
+</center>
+
+</form>
+
+</body>
+</html>
